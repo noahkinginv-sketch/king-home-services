@@ -2,23 +2,24 @@ import Image from "next/image";
 
 const services = [
   "Home Repairs",
+  "Handyman Services",
   "Furniture Assembly",
-  "TV Mounting",
-  "Fixture Installation",
   "Baby Proofing",
-  "General Handyman Services",
+  "Property Maintenance",
+  "Home Maintenance Checkups",
 ];
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f7f2] text-gray-900">
-      <section className="bg-black text-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-20 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:py-24">
+      <section className="relative overflow-hidden bg-black text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(212,175,55,0.2),_transparent_40%)]" />
+        <div className="relative mx-auto flex max-w-7xl flex-col gap-12 px-6 py-20 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:py-24">
           <div className="max-w-2xl">
             <div className="mb-6 flex items-center gap-4">
               <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border border-[#d4af37] bg-white shadow-lg">
                 <Image
-                  src="/logo khs.png"
+                  src="/logo-khs.png"
                   alt="King Home Services logo"
                   width={64}
                   height={64}
@@ -27,7 +28,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.3em] text-[#d4af37]">
-                  Professional Home Support
+                  Premium Home Improvement
                 </p>
                 <h1 className="text-3xl font-semibold text-white sm:text-4xl">
                   King Home Services
@@ -36,16 +37,16 @@ export default function Home() {
             </div>
 
             <h2 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-              Your trusted handyman for repairs, installations, and home improvements.
+              Licensed & Insured Handyman Services
             </h2>
 
             <p className="mt-6 max-w-xl text-lg text-gray-300 sm:text-xl">
-              Reliable, detail-focused service for homes throughout Middle Tennessee.
+              Reliable repairs, installations, and home maintenance for homes across Middle Tennessee.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="tel:9319961635"
+                href="tel:931-996-1635"
                 className="rounded-full bg-[#d4af37] px-7 py-3 text-center font-semibold text-black transition hover:bg-[#f0c95c]"
               >
                 Call Now
@@ -65,7 +66,7 @@ export default function Home() {
             </p>
             <ul className="mt-4 space-y-3 text-sm text-gray-200 sm:text-base">
               <li>• Prompt, dependable service</li>
-              <li>• Skilled workmanship for everyday repairs</li>
+              <li>• Skilled craftsmanship for everyday repairs</li>
               <li>• Friendly support from start to finish</li>
               <li>• Clear communication and honest recommendations</li>
             </ul>
@@ -103,25 +104,24 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b8860b]">
-              About Us
+              About
             </p>
             <h3 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-              Helping homeowners keep life running smoothly
+              Serving Middle Tennessee with dependable workmanship
             </h3>
             <p className="mt-5 text-lg leading-8 text-gray-600">
-              King Home Services provides reliable handyman services throughout Middle Tennessee.
-              From quick fixes to larger home improvement projects, we bring a strong work ethic,
-              practical solutions, and professional care to every job.
+              King Home Services is a trusted local provider of handyman support for homes throughout Middle Tennessee.
+              From quick fixes to regular maintenance, we bring dependable service and a commitment to quality to every project.
             </p>
           </div>
 
           <div className="rounded-3xl bg-black p-8 text-white shadow-xl">
-            <h4 className="text-2xl font-semibold">Ready to get started?</h4>
+            <h4 className="text-2xl font-semibold">Book your next repair</h4>
             <p className="mt-4 text-gray-300">
-              Whether you need a small repair or a full home improvement upgrade, we are here to help.
+              Fast scheduling, clear communication, and quality service you can count on.
             </p>
             <a
-              href="tel:9319961635"
+              href="tel:931-996-1635"
               className="mt-6 inline-flex rounded-full bg-[#d4af37] px-6 py-3 font-semibold text-black transition hover:bg-[#f0c95c]"
             >
               Call (931) 996-1635
@@ -142,7 +142,7 @@ export default function Home() {
             Reach out for dependable handyman support and a free estimate tailored to your home.
           </p>
           <a
-            href="tel:9319961635"
+            href="tel:931-996-1635"
             className="mt-8 inline-flex rounded-full bg-black px-7 py-3 font-semibold text-white transition hover:bg-[#1b1b1b]"
           >
             Phone: (931) 996-1635
