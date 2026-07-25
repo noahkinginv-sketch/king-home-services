@@ -2,51 +2,41 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur border-b border-white/10">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-
-        {/* Logo */}
-        <a href="/" className="flex items-center gap-3">
+    <header className="sticky top-0 z-50 border-b border-[#d4af37]/20 bg-slate-950/80 backdrop-blur-sm shadow-sm shadow-black/20">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-3 sm:px-8 sm:py-4">
+        <a href="/" className="flex items-center gap-4">
           <Image
             src="/logo-khs.png"
             alt="King Home Services"
-            width={50}
-            height={50}
-            className="rounded-full bg-white p-1"
+            width={56}
+            height={56}
+            className="h-[52px] w-auto object-contain"
           />
-
-          <div>
-  <p className="text-xs uppercase tracking-[0.35em] text-[#d4af37]">
-    Premium Home Improvement
-  </p>
-
-  <h1 className="text-3xl font-extrabold text-white leading-none mt-1">
-    King Home Services
-  </h1>
-</div>
+          <span className="text-lg font-semibold uppercase tracking-[0.18em] text-white sm:text-xl">
+            King Home Services
+          </span>
         </a>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm text-white">
-          <a href="#solutions" className="hover:text-[#d4af37] transition">
-            Solutions
+        <nav className="hidden items-center gap-8 text-sm font-medium uppercase tracking-[0.18em] text-white/85 md:flex lg:gap-10">
+          <a href="#solutions" className="transition duration-200 ease-out hover:text-[#d4af37] hover:opacity-100">
+            Services
           </a>
-
-          <a href="#about" className="hover:text-[#d4af37] transition">
+          <a href="#projects" className="transition duration-200 ease-out hover:text-[#d4af37] hover:opacity-100">
+            Projects
+          </a>
+          <a href="#about" className="transition duration-200 ease-out hover:text-[#d4af37] hover:opacity-100">
             About
           </a>
-
-          <a href="#contact" className="hover:text-[#d4af37] transition">
+          <a href="#contact" className="transition duration-200 ease-out hover:text-[#d4af37] hover:opacity-100">
             Contact
           </a>
         </nav>
 
-        {/* Call Button */}
         <a
-          href="tel:9319961635"
-          className="rounded-full bg-[#d4af37] px-5 py-2 font-semibold text-black hover:bg-[#f0c95c] transition"
+          href="#contact"
+          className="inline-flex items-center justify-center rounded-full bg-[#d4af37] px-6 py-2.5 text-sm font-semibold text-black shadow-[0_14px_36px_rgba(212,175,55,0.18)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#e0b73f]"
         >
-          Call Now
+          Free Estimate
         </a>
       </div>
     </header>
